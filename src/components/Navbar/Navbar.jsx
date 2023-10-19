@@ -1,5 +1,5 @@
 import "./styles.css";
-
+import CarWidget from "../CartWidget/Cartwidget";
 import LogoSneakers from '../../images/sneakers.png';
 
 function Navbar() {
@@ -22,6 +22,7 @@ function Navbar() {
             </li>
         </ul>
       </div>
+      <CarWidget />
     </div>
   );
 }
