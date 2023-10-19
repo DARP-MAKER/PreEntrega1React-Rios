@@ -1,4 +1,4 @@
-import Navbar from './components/Navbar/Navbar'; // Ajusta la ruta de importación
+import Navbar from './components/Navbar/Navbar.jsx'; 
 
 function App() {
   return (

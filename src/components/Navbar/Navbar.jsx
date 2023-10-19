@@ -4,21 +4,21 @@ import LogoSneakers from '../../images/sneakers.png';
 
 function Navbar() {
   return (
-    <div>
-      <img src={LogoSneakers} alt="Logo Sneakers" />
-      <h1>Sneakers</h1>
+    <div className="navbar-container">
+      <img src={LogoSneakers} alt="Logo Sneakers" width="200px" />
+      
       <div>
-        <ul className="List-container">
+        <ul className="list-container">
             <li>
-                <button>Hombre</button>
+                <button className="category-button">Hombre</button>
             </li>
 
             <li>
-                <button>Mujer</button>
+                <button className="category-button">Mujer</button>
             </li>
 
             <li>
-                <button>Nueva coleccion</button>
+                <button className="category-button">Nueva coleccion</button>
             </li>
         </ul>
       </div>
