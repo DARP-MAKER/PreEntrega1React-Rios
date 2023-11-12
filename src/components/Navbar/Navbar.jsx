@@ -1,4 +1,4 @@
-import "./styles.css";
+import "../Styles/Styles.css"
 import CarWidget from "../CartWidget/Cartwidget";
 import LogoSneakers from '../../images/sneakers.png';
 
