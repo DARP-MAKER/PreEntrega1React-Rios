@@ -1,27 +1,34 @@
-import "../Styles/Styles.css"
+import { Link } from "react-router-dom";
+import "../Styles/Styles.css";
 import CarWidget from "../CartWidget/Cartwidget";
 import LogoSneakers from '../../images/sneakers.png';
 
-function Navbar() {
+const Navbar = () => {
   return (
     <div className="navbar-container">
       <img src={LogoSneakers} alt="Logo Sneakers" width="200px" />
       
-      <div>
+      <nav>
         <ul className="list-container">
             <li>
-                <button className="category-button">Hombre</button>
+                <Link to={ "/category/Hombre"} className="navbar-button">
+                  Hombre 
+                </Link>
             </li>
 
             <li>
-                <button className="category-button">Mujer</button>
+                <Link to={ "/category/Mujer"} className="navbar-button">
+                  Mujer 
+                </Link>
             </li>
 
             <li>
-                <button className="category-button">Nueva coleccion</button>
+                <Link to={ "/category/Nueva coleccion"} className="navbar-button">
+                  Nueva coleccion
+                </Link>
             </li>
         </ul>
-      </div>
+      </nav>
       <CarWidget />
     </div>
   );
